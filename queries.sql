@@ -1,7 +1,7 @@
 /*Queries that provide answers to the questions from all projects.*/
 
 SELECT * FROM ANIMALS WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-01-01';
-SELECT * FROM ANIMALS WHERE weight_kg BETWEEN 10.3 AND 17.4;
+SELECT * FROM ANIMALS WHERE weight_kg >= 10.4 and weight_kg <= 17.4;
 SELECT name,escape_attempts FROM ANIMALS WHERE weight_kg>10.5;
 SELECT * FROM ANIMALS WHERE name!='Gabumon';
 SELECT * FROM ANIMALS WHERE neutered=true AND escape_attempts<3;
