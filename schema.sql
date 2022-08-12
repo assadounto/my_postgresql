@@ -23,6 +23,31 @@ name VARCHAR(100),
 PRIMARY key(ID)
 );
 
+create table vets(
+ID INT GENERATED ALWAYS AS IDENTITY,
+name VARCHAR(100),
+age INT,
+date_of_graduation DATE,
+PRIMARY key(ID)
+);
+
+create table specializations(
+    species_id int ,
+    vet_id int,
+    PRIMARY key(species_id,vet_id),
+    foreign key(species_id) references species(id),
+    foreign key(vet_id) references vets(id)
+);
+
+create table visits(
+    animal_id int,
+    vet_id int,
+    date_of_visit DATE,
+    PRIMARY key(animal_id,vet_id,date_of_visit),
+    foreign key(animal_id) references animals(id),
+    foreign key(vet_id) references vets(id)
+);
+
 alter table animals drop column species; -- drop column species from table animals
 alter table animals add column species_id INT ;
 alter table animals add constraint constraint_fk foreign key (species_id) references species(ID) on delete cascade; -- add column species_id to table animals
