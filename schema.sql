@@ -53,3 +53,17 @@ alter table animals add column species_id INT ;
 alter table animals add constraint constraint_fk foreign key (species_id) references species(ID) on delete cascade; -- add column species_id to table animals
 alter table animals add column owner_id INT ;
 alter table animals add constraint constraint_ownerid foreign key (owner_id) references owners(ID) on delete cascade; -- add column owner_id to table animals
+
+
+--The following queries are taking too much time (1 sec = 1000ms can be considered as too much time for database query). Try them on your machine to confirm it:
+
+    SELECT COUNT(*) FROM visits where animal_id = 4;
+    SELECT * FROM visits where vet_id = 2;
+    SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+-- Find a way to decrease the execution time of the third query.
+    CREATE INDEX ON visits(animal_id);
+
+    CREATE INDEX ON visits(vet_id desc);
+
+    CREATE INDEX ON owners(email);

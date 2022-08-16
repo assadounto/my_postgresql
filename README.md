@@ -20,6 +20,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@adukyerer](https://twitter.com/adukyerer)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/adu-kyere)
 
+👤 **Ali**
+
+- GitHub: [@aliatayee](https://github.com/aliatayee)
+- Twitter: [@aqaatayee](https://twitter.com/aqaatayee)
+
 
 ## 🤝 Contributing
 
