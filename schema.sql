@@ -62,4 +62,8 @@ alter table animals add constraint constraint_ownerid foreign key (owner_id) ref
     SELECT * FROM owners where email = 'owner_18327@mail.com';
 
 -- Find a way to decrease the execution time of the third query.
-    CREATE INDEX ON owners(email) 
+    CREATE INDEX ON visits(animal_id);
+
+    CREATE INDEX ON visits(vet_id desc);
+
+    CREATE INDEX ON owners(email);
