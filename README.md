@@ -1,7 +1,10 @@
 # My  First Database 
 
-This is my first database in PostgreSQL
+This is my first database in PostgreSQL. It is an animals databse called vet_clinic
 
+# Schema diagram
+
+<img src="./schema_shot.png"></img>
 
 ## Getting Started
 
