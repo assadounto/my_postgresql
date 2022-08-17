@@ -4,7 +4,7 @@ This is my first database in PostgreSQL. It is an animals
 
 # Schema diagram
 
-<img src="./schema.png"></img>
+<img src="./schema_shot.png"></img>
 
 ## Getting Started
 
