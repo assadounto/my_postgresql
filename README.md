@@ -1,6 +1,6 @@
 # My  First Database 
 
-This is my first database in PostgreSQL. It is an animals
+This is my first database in PostgreSQL. It is an animals databse called vet_clinic
 
 # Schema diagram
 
